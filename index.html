@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module" defer></script>
+    <script src="js/class.js" type="module" defer></script>
+    <title>Spider solitaire game</title>
+</head>
+<body>
+    <header>
+        <section class="header-btns">
+            <button data-new-game>New game</button>
+            <button data-save-load-game="save">Save game</button>
+            <button data-save-load-game="load">Load game</button>
+        </section>
+    </header>
+
+    <section class="up-place">
+        <div class="up__card get-cards" data-get-cards="true">
+        </div>
+
+        <div class="up__card card--stack">
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+
+        <div class="up__card card--stack">
+            
+        </div>
+    </section>
+
+    <section class="game-place" draggable="false">
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+
+        <div class="column-cards">
+
+            <div class="card-game card-game--empty-hide" data-card-empty>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="slots-section save-game" data-slots-closed="true" data-slots="save">
+        <h4 style="color: white; font-family: sans-serif;">Save game</h4>
+        <div class="slot" data-save-slot="1">Save Slot 1 <p class="slot-p" data-save-p=>No game</p></div>
+        <div class="slot" data-save-slot="2">Save Slot 2 <p class="slot-p" data-save-p>No game</p></div>
+        <div class="slot" data-save-slot="3">Save Slot 3 <p class="slot-p" data-save-p>No game</p></div>
+        <div class="slot" data-save-slot="4">Save Slot 4 <p class="slot-p" data-save-p>No game</p></div>
+
+        <button class="close-button" data-close-slots="save"><img src="images/icon-close.png" alt="close icon" class="close-img"></button>
+    </section>
+
+    <section class="slots-section load-game" data-slots-closed="true" data-slots="load">
+        <h4 style="color: white; font-family: sans-serif;">Load game</h4>
+        <div class="slot" data-load-slot="1">Load Slot 1 <p class="slot-p" data-load-p=>No game</p></div>
+        <div class="slot" data-load-slot="2">Load Slot 2 <p class="slot-p" data-load-p>No game</p></div>
+        <div class="slot" data-load-slot="3">Load Slot 3 <p class="slot-p" data-load-p>No game</p></div>
+        <div class="slot" data-load-slot="4">Load Slot 4 <p class="slot-p" data-load-p>No game</p></div>
+
+        <button class="close-button" data-close-slots="load"><img src="images/icon-close.png" alt="close icon" class="close-img"></button>
+    </section>
+
+    <h3 class="no-save-msg" data-no-save-msg-show = 'false'>There is no games saved here</h3>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
